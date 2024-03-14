@@ -1,0 +1,44 @@
+scalar DateTime
+
+type User {
+  id: ID!
+  username: String!
+  email: String!
+  password: String!
+  role: String!
+}
+
+type Category {
+  id: ID!
+  name: String!
+}
+
+type Comment {
+  id: ID!
+  author: User!
+  text: String!
+  publicationDate: DateTime
+  post: Post!
+}
+
+union Post = Offer | Review
+
+type Query {
+  commentById(id: ID!): Comment
+  comments: [Comment]
+}
+
+type Mutation {
+  createComment(input: CommentInput!): Comment
+  updateComment(id: ID!, input: CommentModify!): Comment
+  deleteComment(id: ID!): Comment
+}
+
+input CommentInput {
+  text: String!
+  post: ID!
+}
+
+input CommentModify {
+  text: String
+}

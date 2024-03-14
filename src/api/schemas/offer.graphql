@@ -1,0 +1,46 @@
+scalar DateTime
+
+type Offer {
+  id: ID!
+  author: User!
+  category: Category!
+  header: String!
+  text: String!
+  publicationDate: DateTime
+  deletionDate: DateTime
+  comments: [Comment]!
+}
+
+type User {
+  id: ID!
+  username: String!
+  email: String!
+  password: String!
+  role: String!
+}
+
+type Category {
+  id: ID!
+  name: String!
+}
+
+type Query {
+  offerById(id: ID!): Offer
+  offers: [Offer]
+  searchOffers(searchTerm: String!): [Offer]
+}
+
+type Mutation {
+  """
+    Vaatii tokenin tms
+  """
+  createOffer(input: OfferInput!): Offer
+  updateOffer(id: ID!, input: OfferInput!): Offer
+  deleteOffer(id: ID!): Offer
+}
+
+input OfferInput {
+  header: String!
+  text: String!
+  deletionDate: DateTime
+}

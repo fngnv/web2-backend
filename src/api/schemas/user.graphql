@@ -1,0 +1,54 @@
+type User {
+  id: ID!
+  username: String!
+  email: String!
+  role: String
+  isFollowing: [Category!]!
+}
+
+type LoginResponse {
+  token: String
+  message: String!
+  user: User!
+}
+
+type UserResponse {
+  message: String!
+  user: User!
+}
+
+input Credentials {
+  email: String!
+  password: String!
+}
+
+input UserInput {
+  username: String!
+  email: String!
+  password: String!
+  role: String
+}
+
+input UserModify {
+  username: String
+  email: String
+  password: String
+}
+
+type Query {
+  users: [User]
+  userById(id: ID!): User
+  usersByCategory(categoryId: ID!): [User]
+  checkToken: UserResponse
+}
+
+type Mutation {
+  login(credentials: Credentials!): LoginResponse
+  register(user: UserInput!): UserResponse
+  addCategoryToUser(categoryId: ID!): User
+  removeCategoryFromUser(categoryId: ID!): User
+  updateUser(user: UserModify!): UserResponse
+  deleteUser: UserResponse
+  updateUserAsAdmin(user: UserModify!, id: ID!): UserResponse
+  deleteUserAsAdmin(id: ID!): UserResponse
+}
