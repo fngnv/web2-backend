@@ -9,7 +9,7 @@
 ## Asennusohjeet
 
 1. **Kloonaa Repositorio**
-   - Avaa komentorivi ja suorita seuraava komento:
+    Avaa komentorivi ja suorita seuraava komento:
      ```
      git clone <repositoryn URL>
      ```
