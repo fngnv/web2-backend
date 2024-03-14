@@ -8,28 +8,28 @@
 
 ## Asennusohjeet
 
-1. **Kloonaa Repositorio**
+1. **Kloonaa repositorio**
     Avaa komentorivi ja suorita seuraava komento:
      ```
      git clone <repositoryn URL>
      ```
 
-2. **Määritä Ympäristömuuttujat:**
+2. **Määritä ympäristömuuttujat:**
    Vaihda .env.sample-tiedoston nimi .env:ksi ja lisää arvo DB_URL-muuttujalle.
 
-3. **Asenna Riippuvuudet**
+3. **Asenna riippuvuudet**
     Siirry projektin juurikansioon komentorivillä ja suorita:
      ```
      npm install
      ```
 
-4. **Rakenna Projekti**
+4. **Rakenna projekti**
    Kun asennus on valmis, suorita seuraava komento projektin juurikansiossa:
      ```
      npm run build
      ```
 
-5. **Käynnistä Palvelin**
+5. **Käynnistä palvelin**
    Projektin rakentamisen jälkeen voit käynnistää kehityspalvelimen seuraavalla komennolla:
      ```
      npm run dev
