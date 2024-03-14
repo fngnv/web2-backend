@@ -32,7 +32,7 @@
 5. **Käynnistä palvelin:**
    Projektin rakentamisen jälkeen voit käynnistää kehityspalvelimen seuraavalla komennolla:
      ```
-     npm run dev
+     npm start
      ```
 
 Näiden vaiheiden suorittamisen jälkeen backend on valmis käytettäväksi paikallisesti.
