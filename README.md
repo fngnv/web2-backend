@@ -35,4 +35,4 @@
      npm run dev
      ```
 
-Näiden vaiheiden suorittamisen jälkeen backend on käytettäväksi paikallisesti.
+Näiden vaiheiden suorittamisen jälkeen backend on valmis käytettäväksi paikallisesti.
