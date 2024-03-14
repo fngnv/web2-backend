@@ -8,7 +8,7 @@
 
 ## Asennusohjeet
 
-1. **Kloonaa repositorio**
+1. **Kloonaa repositorio:**
     Avaa komentorivi ja suorita seuraava komento:
      ```
      git clone <repositoryn URL>
