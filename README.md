@@ -4,7 +4,7 @@
 
 ### Vera Finogenova, Jhon Rastrojo López & Korpi Tolonen
 
-# Delightful Insightsin taustakoodin repository
+# Delightful Insights backend repository
 
 ## Asennusohjeet
 
