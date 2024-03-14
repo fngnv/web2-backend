@@ -17,19 +17,19 @@
 2. **Määritä ympäristömuuttujat:**
    Vaihda .env.sample-tiedoston nimi .env:ksi ja lisää arvo DB_URL-muuttujalle.
 
-3. **Asenna riippuvuudet**
+3. **Asenna riippuvuudet:**
     Siirry projektin juurikansioon komentorivillä ja suorita:
      ```
      npm install
      ```
 
-4. **Rakenna projekti**
+4. **Rakenna projekti:**
    Kun asennus on valmis, suorita seuraava komento projektin juurikansiossa:
      ```
      npm run build
      ```
 
-5. **Käynnistä palvelin**
+5. **Käynnistä palvelin:**
    Projektin rakentamisen jälkeen voit käynnistää kehityspalvelimen seuraavalla komennolla:
      ```
      npm run dev
